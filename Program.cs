@@ -18,3 +18,17 @@ void PrintArray(string[] inArray)
     }
     Console.WriteLine("]");
 }
+
+
+int ReturnElementsCount(string[] inArray, int length)
+{
+    int count = 0;
+    for (int i = 0; i < inArray.GetLength(0); i++)
+    {
+        if (inArray[i].Length <= length)
+        {
+            count++;
+        }
+    }
+    return count;
+}
